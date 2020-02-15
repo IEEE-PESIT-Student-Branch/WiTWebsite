@@ -1,60 +1,173 @@
-@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-body{
-    background-color:#e44f25;
-    color: white;
+@import url("https://fonts.googleapis.com/css?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
 }
-*{
-    font-family: 'Montserrat', sans-serif;
+body {
+  background-color: #e44f25;
+  color: white;
+  height: 100%;
+  width: 100%;
+  margin: 0 0;
+  padding: 0 0;
 }
-.ieee-logo{
-    position: absolute;
-    top: 0%;
-    right: 0%;
+* {
+  font-family: "Montserrat", sans-serif;
+}
+.ieee-logo {
+  position: absolute;
+  top: 0%;
+  right: 0%;
 }
 
-.main-title{
-    font-size: 2.5em;
-    margin-left: 30px;
-    margin-top: 60px;
-    font-family: 'Russo One', sans-serif;
+.main-title {
+  font-size: 2.5em;
+  margin-left: 30px;
+  margin-top: 60px;
+  font-family: "Russo One", sans-serif;
 }
 
-.title{
-    text-align: center;
-
+.title {
+  text-align: center;
 }
 
-.speakers{
-    margin-top: 60px;
-    padding: 150px 0em 150px 0em;
-    //border: 3px solid white;
+.speakers {
+  margin-top: 60px;
+  padding: 150px 0em 150px 0em;
+  //border: 3px solid white;
+}
+
+.container-2 {
+  margin-top: 20px;
+  border: 3px dotted white;
+  padding: 300px 0em 300px 0em;
+  display: none;
+}
+
+.container-3 {
+  background-color: #da370a;
+  padding: 20px 0 20px 0;
+}
+
+.table {
+  min-width: 100vw;
+  height: 150px;
+  background-color: rgb(0, 0, 0);
+}
+
+.social {
+  position: relative;
+  top: 4%;
+  right: 0%;
+}
+.sicon {
+  width: 37px;
+}
+/* ----------------------------------------------------------------------------------------------- */
+
+.header {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 10% 10% 80%;
+  grid-template-columns: 1fr;
+}
+
+.section:nth-of-type(odd) {
+  background-color: beige;
+  color: #293147;
+}
+
+#main-title-container {
+  grid-area: 1 / 1 / 4 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #293147;
+  background-color: rgb(250, 146, 9);
+  /* background-image: url("https://images.all-free-download.com/images/graphiclarge/abstract_technical_background_310934.jpg"); */
+}
+
+#main-title {
+  font-size: 3.5rem;
+  text-align: center;
+  font-family: "Russo One", sans-serif;
+  margin: 0;
+}
+
+#pes-logo {
+  grid-area: 1 / 1 / 2 / 2;
+  margin: auto;
+  height: 95%;
+  display: block;
+}
+
+#ieee-logo {
+  grid-area: 2 / 1 / 3 / 2;
+  height: 95%;
+  display: block;
+  margin: auto;
+}
+
+#read-more {
+  background-color: #293147;
+  color: white;
+  padding: 1em;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 12%;
+  text-decoration: none;
 }
 
 
-.container-2{
-    margin-top: 20px;
-    //border: 3px dotted white;
-    padding: 300px 0em 300px 0em;
-    display: none;
+
+#button {
+  display: inline-block;
+  background-color: rgb(0, 140, 255);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
 }
 
-.container-3{
-    background-color: #da370a;
-    padding: 20px 0 20px 0;
+#button::after {
+  content: "^";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
 }
 
-.table{
-    min-width: 100vw;
-    height: 150px;
-    background-color: rgb(0, 0, 0);
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }
 
-.social{
-    position: relative;
-    top: 4%;
-    right: 0%;
+@media screen and (min-width: 480px) {
+  #main-title {
+    font-size: 5rem;
+  }
 }
-.sicon{
-    width: 37px;
+
+@media screen and (min-width: 960px) {
+  #main-title {
+    font-size: 5rem;
+    margin: 0px 0.2em;
+  }
+
+  #main-title-div {
+    display: flex;
+    flex-direction: row;
+  }
 }
