@@ -82,6 +82,7 @@ body {
 }
 
 .section {
+  transition: 1s;
   padding-top: 1.2em;
   padding-bottom: 2rem;
 }
