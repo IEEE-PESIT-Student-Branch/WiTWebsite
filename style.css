@@ -36,7 +36,7 @@ body {
 .speakers {
   margin-top: 60px;
   padding: 150px 0em 150px 0em;
-  //border: 3px solid white;
+  /* border: 3px solid white; */
 }
 
 .container-2 {
@@ -74,9 +74,26 @@ body {
   grid-template-columns: 1fr;
 }
 
+#section-title {
+  margin: 0;
+  text-align: center;
+  font-family: "Russo One", sans-serif;
+  font-size: 2.5rem;
+}
+
+.section {
+  padding-top: 1.2em;
+  padding-bottom: 2rem;
+}
+
 .section:nth-of-type(odd) {
   background-color: beige;
   color: #293147;
+}
+
+.section:nth-of-type(even) {
+  /* background-color: beige; */
+  color: rgba(255, 255, 255, 0.9);
 }
 
 #main-title-container {
@@ -87,7 +104,8 @@ body {
   align-items: center;
   color: #293147;
   background-color: rgb(250, 146, 9);
-  /* background-image: url("https://images.all-free-download.com/images/graphiclarge/abstract_technical_background_310934.jpg"); */
+  /* background-image: url("https://cdn.pixabay.com/photo/2015/05/23/22/16/orange-781119_960_720.png"); */
+  background-size: cover;
 }
 
 #main-title {
@@ -121,8 +139,6 @@ body {
   text-decoration: none;
 }
 
-
-
 #button {
   display: inline-block;
   background-color: rgb(0, 140, 255);
@@ -152,6 +168,39 @@ body {
 #button.show {
   opacity: 1;
   visibility: visible;
+}
+
+.content-body {
+  margin-left: 8%;
+  margin-right: 8%;
+  text-align: justify;
+  margin-top: 7%;
+  color: #293147;
+  font-size: 1.1rem;
+}
+
+.speakers-container {
+  margin-top: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.speaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5em;
+}
+
+.speaker-pic {
+  width: 45%;
+}
+
+.speaker-h {
+  margin: 0;
+  margin-top: 0.5em;
+  text-align: center;
 }
 
 @media screen and (min-width: 480px) {
