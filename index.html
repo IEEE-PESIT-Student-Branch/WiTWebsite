@@ -22,6 +22,11 @@
 
     </div> -->
 
+    <!-- <marquee>
+        <img src="pes_logo_white.png" class="marquee-image">
+        <img src="mainlogo.png" class="marquee-image">
+    </marquee> -->
+
     <header class="header">
         <section id="main-title-container">
             <div id="main-title-div">
@@ -30,19 +35,19 @@
                 <h1 id="main-title">Tech</h1>
             </div>
             <h2 id="home-date">8th March, 2019</h2>
-            <a href="#about-container" id="read-more">Read More</a>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#about-container">About</a></li><!--
+                    --><li><a href="#speakers-container">Speakers</a></li><!--
+                    --><li><a href="#schedule-container">Schedule</a></li><!--
+                   --><li><a href="#register-container">Register</a></li><!--
+                    --><li class="last-nav-item"><a href="#contact-container">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href="#about-container" id="read-more"><img src="down_arrow.svg" height="40px"></a>
         </section>
         <!-- <img src="pes_logo_white.png" id="pes-logo">
         <img src="mainlogo.png" id="ieee-logo"> -->
-        <!--  <nav>
-            <ul>
-                <li>About</li>
-                <li>Speakers</li>
-                <li>Schedule</li>
-                <li>Register</li>
-                <li>Contact Us</li>
-            </ul>
-        </nav> -->
     </header>
 
     <section class="section" id="about-container">
@@ -101,7 +106,7 @@
 
     <section class="section" id="schedule-container">
         <h1 id="section-title">Schedule</h1>
-        <table class="alt">
+        <table class="schedule-table">
             <thead>
                 <tr>
                     <th>Time</th>
@@ -163,6 +168,9 @@
 
     <section class="section" id="register-container">
         <h1 id="section-title">Register</h1>
+        <iframe id="register-form"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfpjo8bTJsrWXfADVQxcw2wBhlCefFEWB40RH9kjy6O4Tu7Vw/viewform?embedded=true"
+            frameborder="0">Loading…</iframe>
     </section>
 
     <section class="section" id="contact-container">
