@@ -105,8 +105,11 @@ body {
   align-items: center;
   color: #293147;
   background-color: rgb(250, 146, 9);
-  /* background-image: url("https://cdn.pixabay.com/photo/2015/05/23/22/16/orange-781119_960_720.png"); */
+  background-image: url("https://cdn.pixabay.com/photo/2015/05/23/22/16/orange-781119_960_720.png");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #main-title {
