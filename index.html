@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
     <title>WiT</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
@@ -21,40 +22,99 @@
 
     </div> -->
 
+    <!-- <marquee>
+        <img src="pes_logo_white.png" class="marquee-image">
+        <img src="mainlogo.png" class="marquee-image">
+    </marquee> -->
+
     <header class="header">
         <section id="main-title-container">
             <div id="main-title-div">
                 <h1 id="main-title">Women</h1>
                 <h1 id="main-title">in</h1>
                 <h1 id="main-title">Tech</h1>
-                </div>
-                <h2 style="text-align: center;">8th March, 2019</h2>
-            <a href="#about-container" id="read-more">Read More</a>
+            </div>
+            <h2 id="home-date">8th March, 2019</h2>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#about-container">About</a></li>
+                    <!--
+                    -->
+                    <li><a href="#speakers-container">Speakers</a></li>
+                    <!--
+                    -->
+                    <li><a href="#schedule-container">Schedule</a></li>
+                    <!--
+                   -->
+                    <li><a href="#register-container">Register</a></li>
+                    <!--
+                    -->
+                    <li class="last-nav-item"><a href="#contact-container">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href="#about-container" id="read-more"><img src="down_arrow.svg" height="40px"></a>
         </section>
         <!-- <img src="pes_logo_white.png" id="pes-logo">
         <img src="mainlogo.png" id="ieee-logo"> -->
-        <!--  <nav>
-            <ul>
-                <li>About</li>
-                <li>Speakers</li>
-                <li>Schedule</li>
-                <li>Register</li>
-                <li>Contact Us</li>
-            </ul>
-        </nav> -->
     </header>
 
     <section class="section" id="about-container">
-        <h1 id="main-title">About</h1>
+        <div data-aos="fade-right">
+            <h1 id="section-title">About</h1>
+            <p class="content-body">
+                Women in Technology (WiT) is an annual event
+                organised by PESU South Campus IEEE Student Branch
+                to inspire, engage and advance women in engineering.
+                The event provides professional women in technology,
+                whether in industry, academia, or government a stage
+                to tell their stories of success. This year, we are
+                privileged to host six speakers who will be sharing
+                their journeys on the platform.
+                It aims to discuss how women can have a larger and
+                crucial role in creating success stories in business and
+                technology.</p>
+        </div>
     </section>
 
     <section class="section" id="speakers-container">
-        <h1 id="main-title">Speakers</h1>
+        <h1 id="section-title" data-aos="fade-right">Speakers</h1>
+        <div class="speakers-container">
+            <div class="speaker" data-aos="zoom-in-up">
+                <img class="speaker-pic" src="sample.jpg">
+                <h3 class="speaker-h">Speaker Name Here</h3>
+                <h5 class="speaker-h">Speaker Position</h5>
+            </div>
+            <div class="speaker" data-aos="zoom-in-up">
+                <img class="speaker-pic" src="sample.jpg">
+                <h3 class="speaker-h">Speaker Name Here</h3>
+                <h5 class="speaker-h">Speaker Position</h5>
+            </div>
+            <div class="speaker" data-aos="zoom-in-up">
+                <img class="speaker-pic" src="sample.jpg">
+                <h3 class="speaker-h">Speaker Name Here</h3>
+                <h5 class="speaker-h">Speaker Position</h5>
+            </div>
+            <div class="speaker" data-aos="zoom-in-up">
+                <img class="speaker-pic" src="sample.jpg">
+                <h3 class="speaker-h">Speaker Name Here</h3>
+                <h5 class="speaker-h">Speaker Position</h5>
+            </div>
+            <div class="speaker" data-aos="zoom-in-up">
+                <img class="speaker-pic" src="sample.jpg">
+                <h3 class="speaker-h">Speaker Name Here</h3>
+                <h5 class="speaker-h">Speaker Position</h5>
+            </div>
+            <!-- <div class="speaker" data-aos="zoom-in-up">
+                <img class="speaker-pic" src="sample.jpg">
+                <h3 class="speaker-h">Speaker Name Here</h3>
+                <h4 class="speaker-h">Speaker Position</h4>
+            </div> -->
+        </div>
     </section>
 
     <section class="section" id="schedule-container">
-        <h1 id="main-title">Schedule</h1>
-        <table class="alt">
+        <h1 id="section-title" data-aos="fade-right">Schedule</h1>
+        <table class="schedule-table" data-aos="fade-right">
             <thead>
                 <tr>
                     <th>Time</th>
@@ -86,8 +146,6 @@
                     <td>01:00 am</td>
                     <td>Mid-night Snacks</td>
                 </tr>
-        
-                <!-- https://www.townscript.com/e/kalpana-2019-hackathon-434224 -->
                 <tr>
                     <td>07:30 am</td>
                     <td>Breakfast</td>
@@ -116,15 +174,33 @@
         </table>
     </section>
 
-    <section class="section" id="register-container">
-        <h1 id="main-title">Register</h1>
+    <section class="section" id="register-container" data-aos="fade-right">
+        <h1 id="section-title">Register</h1>
+        <iframe id="register-form"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSe8Yqj9nGlwX-DTSKNef2Jw5Fj_pbcM2nVRyjU_a5iqwE9G0g/viewform?embedded=true"
+            frameborder="0">Loading…</iframe>
     </section>
 
-    <section class="section" id="contact-container">
-        <h1 id="main-title">Contact</h1>
+    <section class="section" id="contact-container" data-aos="fade-right">
+        <h1 id="section-title">Contact Us</h1>
+        <div class="contact-container">
+            <iframe
+            id="small-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.7184702544446!2d77.662519415386!3d12.861451490928145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6cbccb22bec1%3A0x4bad30b7a7fd5e76!2sPES%20University%20Electronic%20City%20Campus!5e0!3m2!1sen!2sin!4v1582157301025!5m2!1sen!2sin"
+                width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <iframe
+            id="big-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.7184702544446!2d77.662519415386!3d12.861451490928145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6cbccb22bec1%3A0x4bad30b7a7fd5e76!2sPES%20University%20Electronic%20City%20Campus!5e0!3m2!1sen!2sin!4v1582157301025!5m2!1sen!2sin"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <div class="contact-details">
+                <p>Anjali Deshpande : +91-1234567890</p>
+                <p>Anjali Deshpande : +91-1234567890</p>
+                <p>Anjali Deshpande : +91-1234567890</p>
+            </div>
+        </div>
     </section>
 
-    <div class="speakers">
+    <!-- <div class="speakers">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis perferendis dicta facere, assumenda sequi
         cupiditate corporis quae non quod maiores nam, repellat rerum ab totam, perspiciatis rem reprehenderit
         reiciendis modi.
@@ -133,7 +209,7 @@
     <div class="container-2">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, asperiores atque ullam, ea, vitae minima
         labore eum quia sit perferendis sunt quasi dolore corporis quis temporibus ipsa et vero perspiciatis.
-    </div>
+    </div> -->
 
 
     <div class="container-3">
@@ -164,6 +240,7 @@
 
     <a href="#" id="button"></a>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         var topbutton = document.getElementById("button");
         document.addEventListener('scroll', function (e) {
@@ -174,6 +251,10 @@
             else {
                 topbutton.classList.remove("show");
             }
+        });
+        AOS.init({
+            offset: 200,
+            duration: 1000
         });
     </script>
 </body>
