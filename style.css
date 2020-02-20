@@ -6,7 +6,12 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #e44f25;
+  /* background-color: #e44f25; */
+  background-image: url("https://cdn.pixabay.com/photo/2015/05/23/22/16/orange-781119_960_720.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 10%;
   color: white;
   height: 100%;
   width: 100%;
@@ -80,7 +85,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-rows: 10% 10% 80%;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 5fr 1fr;
 }
 
 .navbar {
@@ -111,14 +116,14 @@ body {
 }
 
 #main-title-container {
-  grid-area: 1 / 1 / 4 / 3;
+  grid-area: 1 / 1 / 4 / 4;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #293147;
-  background-color: rgb(250, 146, 9);
-  background-image: url("https://cdn.pixabay.com/photo/2015/05/23/22/16/orange-781119_960_720.png");
+  /* background-color: rgb(250, 146, 9); */
+  /* background-image: url("https://cdn.pixabay.com/photo/2015/05/23/22/16/orange-781119_960_720.png"); */
   background-size: cover;
   background-position: 10%;
   background-repeat: no-repeat;
@@ -132,18 +137,20 @@ body {
   margin: 0;
 }
 
-#pes-logo {
-  grid-area: 1 / 1 / 2 / 2;
+.logo-container img {
+  /* grid-area: 1 / 2 / 2 / 3; */
   margin: auto;
   width: 95%;
+  margin-top: 0.6em;
   display: block;
 }
 
 #ieee-logo {
-  grid-area: 1 / 2 / 2 / 3;
-  width: 95%;
+  grid-area: 2 / 2 / 2 / 3;
+  width: 55%;
   display: block;
   margin: auto;
+  margin-top: 1em;
 }
 
 #read-more {
@@ -215,7 +222,7 @@ body {
 }
 
 .speaker-pic {
-  width: 45%;
+  width: 10em;
 }
 
 .speaker-h {
@@ -252,11 +259,26 @@ th {
   background-color: rgb(180, 164, 99);
 }
 
-#register-form {
+/* #register-form {
   width: 95%;
   height: 500px;
   margin: auto;
   display: block;
+} */
+
+#register-button {
+  padding: 1em 2em;
+  text-decoration: none;
+  margin-top: 2.3em;
+  display: block;
+  margin-left: 23%;
+  margin-right: 22%;
+  text-align: center;
+  font-size: 1.1rem;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  background-color: rgb(105, 157, 253);
 }
 
 .contact-container {
@@ -279,10 +301,31 @@ th {
   display: none;
 }
 
+.bottom-bar {
+  height: 5%;
+  background-color: beige;
+}
+
+.section:nth-of-type(even) {
+  background-color: #ce5b39;
+}
+
+.logo-container {
+  background: white;
+  width: 90%;
+  margin-bottom: 2em;
+  border-radius: 20px;
+}
+
+#wie-logo {
+  width: 40%;
+  padding-bottom: 1em;
+}
+
 @media screen and (min-width: 480px) {
   .speakers-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -365,8 +408,12 @@ th {
     font-size: 1.8rem;
   }
 
-  .speakers-container {
+  .speakers-container1 {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .speakers-container2 {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -382,5 +429,11 @@ th {
   .nav-links a:hover {
     background: #293147;
     color: white;
+  }
+
+  .section {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
