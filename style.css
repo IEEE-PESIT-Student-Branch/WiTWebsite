@@ -259,6 +259,26 @@ th {
   display: block;
 }
 
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.3em;
+}
+
+.contact-details {
+  font-weight: bold;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
+  font-size: 1.1rem;
+}
+
+#big-map {
+  display: none;
+}
+
 @media screen and (min-width: 480px) {
   .speakers-container {
     display: grid;
@@ -269,6 +289,23 @@ th {
 @media screen and (min-width: 910px) {
   .navbar {
     display: block;
+  }
+
+  #big-map {
+    display: block;
+  }
+
+  #small-map {
+    display: none;
+  }
+
+  .contact-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contact-details {
+    margin-left: 1.3em;
   }
 
   .nav-links {
@@ -336,6 +373,10 @@ th {
 @media screen and (min-width: 1200px) {
   #main-title {
     font-size: 5rem;
+  }
+
+  .contact-details {
+    margin-left: 5em;
   }
 
   .nav-links a:hover {
