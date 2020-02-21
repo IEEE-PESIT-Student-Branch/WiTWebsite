@@ -30,11 +30,12 @@
     <header class="header">
         <section id="main-title-container">
             <div id="main-title-div">
-                <h1 id="main-title">Women</h1>
-                <h1 id="main-title">in</h1>
-                <h1 id="main-title">Tech</h1>
+                <h1 id="main-title" class="head1">Women</h1>
+                <h1 id="main-title" class="head1">in</h1>
+                <h1 id="main-title" class="head2">Tech</h1>
             </div>
             <h2 id="home-date">8th March, 2019</h2>
+            <p>AN IEEE PESU EC CAMPUS, WIE CHAPTER EVENT</p>
             <nav class="navbar">
                 <ul class="nav-links">
                     <li><a href="#about-container">About</a></li><!--
@@ -49,6 +50,8 @@
         <!-- <img src="pesu.png" id="pes-logo">
         <img src="ieeepesit.png" id="ieee-logo"> -->
     </header>
+
+    <div class="overlay">
 
     <section class="section" id="about-container">
         <div data-aos="fade-right">
@@ -65,39 +68,45 @@
                 It aims to discuss how women can have a larger and
                 crucial role in creating success stories in business and
                 technology.</p>
+
+            <p class="content-body" style="font-weight: bold;">Registration Fee:</p>
+            <ul>
+                <li>IEEE Members: &#8377 170</li>
+                <li>Non-IEEE Members: &#8377 200</li>
+            </ul>
         </div>
     </section>
 
     <section class="section" id="speakers-container">
         <h1 id="section-title" data-aos="fade-right">Speakers</h1>
         <div class="speakers-container">
-            <div class="speaker" data-aos="zoom-in-up">
+            <div class="speaker card" id="speaker-1" data-aos="zoom-in-up">
                 <img class="speaker-pic" src="sample.jpg">
                 <h3 class="speaker-h">Speaker Name Here</h3>
                 <h5 class="speaker-h">Speaker Position</h5>
             </div>
-            <div class="speaker" data-aos="zoom-in-up">
+            <div class="speaker card" id="speaker-2" data-aos="zoom-in-up">
                 <img class="speaker-pic" src="sample.jpg">
                 <h3 class="speaker-h">Tina Vas</h3>
                 <h5 class="speaker-h">Senior Vice President Global HR at Hinduja Global Solutions</h5>
             </div>
-            <div class="speaker" data-aos="zoom-in-up">
+            <div class="speaker card" id="speaker-3" data-aos="zoom-in-up">
                 <img class="speaker-pic" src="sample.jpg">
                 <h3 class="speaker-h">Speaker Name Here</h3>
                 <h5 class="speaker-h">Speaker Position</h5>
             </div>
             <!-- </div> -->
             <!-- <div class="speakers-container2"> -->
-            <div class="speaker" data-aos="zoom-in-up">
+            <!-- <div class="speaker card" data-aos="zoom-in-up">
                 <img class="speaker-pic" src="sample.jpg">
                 <h3 class="speaker-h">Speaker Name Here</h3>
                 <h5 class="speaker-h">Speaker Position</h5>
-            </div>
-            <div class="speaker" data-aos="zoom-in-up">
+            </div> -->
+            <!-- <div class="speaker card" data-aos="zoom-in-up">
                 <img class="speaker-pic" src="sample.jpg">
                 <h3 class="speaker-h">Speaker Name Here</h3>
                 <h5 class="speaker-h">Speaker Position</h5>
-            </div>
+            </div> -->
             <!-- </div> -->
             <!-- <div class="speaker" data-aos="zoom-in-up">
                 <img class="speaker-pic" src="sample.jpg">
@@ -177,19 +186,7 @@
         <a id="register-button" href="https://bit.ly/2T2B8cF" target="_blank" data-aos="fade-right">Register Here</a>
     </section>
 
-    <section class="section" id="logo-container">
-        <div class="big-logo-container">
-            <div class="logo-container" data-aos="fade-right">
-                <img src="pesu.png" id="pesu-logo">
-            </div>
-            <div class="logo-container" data-aos="fade-right">
-                <img src="ieeepesit.png" id="ieee-logo">
-            </div>
-            <div class="logo-container" data-aos="fade-right">
-                <img src="wie.png" id="wie-logo">
-            </div>
-        </div>
-    </section>
+    
 
     <section class="section" id="contact-container">
         <h1 id="section-title" data-aos="fade-right">Contact Us</h1>
@@ -220,6 +217,21 @@
             </div>
         </div>
     </section>
+
+    <section class="section" id="logo-container">
+        <div class="big-logo-container">
+            <div class="logo-container">
+                <img src="pesu.png" id="pesu-logo">
+            </div>
+            <div class="logo-container">
+                <img src="ieeepesit.png" id="ieee-logo">
+            </div>
+            <div class="logo-container">
+                <img src="wie.png" id="wie-logo">
+            </div>
+        </div>
+    </section>
+    </div>
     <!-- <div class="bottom-bar"></div> -->
 
     <!-- <div class="speakers">
@@ -274,7 +286,7 @@
             }
         });
         AOS.init({
-            offset: 200,
+            offset: 150,
             duration: 1000
         });
     </script>
