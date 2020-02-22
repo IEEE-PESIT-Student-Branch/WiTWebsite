@@ -36,7 +36,7 @@
 
 //   update() {
 //     this.pos.add(this.vel);
-//     this.edges();   
+//     this.edges();
 //   }
 
 //   edges() {
@@ -60,10 +60,29 @@
 //   }
 // }
 
+var days = document.getElementById("days");
 var hours = document.getElementById("hours");
 var minutes = document.getElementById("minutes");
 var seconds = document.getElementById("seconds");
-var target = 
+var target = new Date(2020, 02, 01, 00, 00, 00, 00).getTime();
 setInterval(() => {
-    console.log(new Date().getTimezoneOffset());
-},1000);
+  var d = new Date().getTime();
+  var diff = target - d;
+  console.log(diff);
+  if (diff < 0) {
+    document.getElementById("closed-text").style.display = "block";
+    document.getElementById("countdown").style.display = "none";
+  } else {
+    var day = Math.floor(diff/(1000*60*60*24));
+    diff -= (day * 24*60*60*1000);
+    var h = Math.floor(diff / (1000 * 60 * 60));
+    diff -= (h * 60 * 60 * 1000);
+    var m = Math.floor(diff / (1000 * 60));
+    diff -= (m * 60 * 1000);
+    var s = Math.floor(diff / 1000);
+    hours.innerHTML = h;
+    minutes.innerHTML = m;
+    seconds.innerHTML = s;
+    days.innerHTML = day;
+  }
+}, 1000);

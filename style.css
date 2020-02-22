@@ -387,6 +387,12 @@ th {
   font-size: 0.9rem;
 }
 
+.timer {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
 @media screen and (min-width: 480px) {
   .speakers-container {
     display: grid;
@@ -506,8 +512,8 @@ th {
 
 @media screen and (min-width: 700px) {
   .schedule-table td {
-  font-size: 1.2rem;
-}
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (min-width: 800px) {
