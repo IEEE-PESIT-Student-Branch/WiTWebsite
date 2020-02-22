@@ -64,11 +64,10 @@ var days = document.getElementById("days");
 var hours = document.getElementById("hours");
 var minutes = document.getElementById("minutes");
 var seconds = document.getElementById("seconds");
-var target = new Date(2020, 02, 01, 00, 00, 00, 00).getTime();
+var target = new Date(2020, 02, 08, 00, 00, 00, 00).getTime();
 setInterval(() => {
   var d = new Date().getTime();
   var diff = target - d;
-  console.log(diff);
   if (diff < 0) {
     document.getElementById("closed-text").style.display = "block";
     document.getElementById("countdown").style.display = "none";
