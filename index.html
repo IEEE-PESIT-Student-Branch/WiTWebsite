@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
-    <title>WiT</title>
+    <title>WiT 2020</title>            
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
@@ -28,14 +28,16 @@
     </marquee> -->
 
     <header class="header">
+        <div id="particle-container"></div>
         <section id="main-title-container">
             <div id="main-title-div">
                 <h1 id="main-title" class="head1">Women</h1>
-                <h1 id="main-title" class="head1">in</h1>
-                <h1 id="main-title" class="head2">Tech</h1>
+                <h1 id="main-title" class="head2">in</h1>
+                <h1 id="main-title" class="head3">Tech</h1>
             </div>
-            <h2 id="home-date">8th March, 2019</h2>
+            <h2 id="home-date">8th March, 2020</h2>
             <p>AN IEEE PESU EC CAMPUS, WIE CHAPTER EVENT</p>
+            <p style="font-size: 1.3rem; font-weight: bold; text-align: center;">Registrations End in<br> <span id="hours">24</span>H <span id="minutes">24</span>M <span id="seconds">24</span>S </p>
             <nav class="navbar">
                 <ul class="nav-links">
                     <li><a href="#about-container">About</a></li><!--
@@ -47,8 +49,6 @@
             </nav>
             <a href="#about-container" id="read-more"><img src="down_arrow.svg" height="40px"></a>
         </section>
-        <!-- <img src="pesu.png" id="pes-logo">
-        <img src="ieeepesit.png" id="ieee-logo"> -->
     </header>
 
     <div class="overlay">
@@ -127,52 +127,32 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>04:00 pm</td>
+                    <td>09:00 am</td>
                     <td>Registration Starts</td>
                 </tr>
                 <tr>
-                    <td>04:45 pm</td>
-                    <td>Inaugration Function</td>
+                    <td>10:00 am</td>
+                    <td>Inaugration</td>
                 </tr>
                 <tr>
-                    <td>05:30 pm</td>
-                    <td>Make-a-Thon Begins</td>
+                    <td>10:30 am</td>
+                    <td>Event Phase - 1</td>
                 </tr>
                 <tr>
-                    <td>08:00 pm</td>
-                    <td>Dinner & Recreational Activities</td>
-                </tr>
-                <tr>
-                    <td>11:30pm</td>
-                    <td>1st Round Judging Begins</td>
-                </tr>
-                <tr>
-                    <td>01:00 am</td>
-                    <td>Mid-night Snacks</td>
-                </tr>
-                <tr>
-                    <td>07:30 am</td>
-                    <td>Breakfast</td>
-                </tr>
-                <tr>
-                    <td>09:30 am</td>
-                    <td>2nd Round Judging</td>
-                </tr>
-                <tr>
-                    <td>12:30 pm</td>
+                    <td>12:15 pm</td>
                     <td>Lunch</td>
                 </tr>
                 <tr>
-                    <td>03:00 pm</td>
-                    <td>Final Round Judging</td>
+                    <td>01:00 pm</td>
+                    <td>Event Phase - 2</td>
                 </tr>
                 <tr>
-                    <td>04:00 pm</td>
-                    <td>High Tea</td>
+                    <td>02:45 pm</td>
+                    <td>Panel Discussion</td>
                 </tr>
                 <tr>
-                    <td>04:30 pm</td>
-                    <td>Valedictory Function</td>
+                    <td>03:15 pm</td>
+                    <td>Vote of Thanks and Dispersal</td>
                 </tr>
             </tbody>
         </table>
@@ -290,6 +270,7 @@
             duration: 1000
         });
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

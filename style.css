@@ -91,6 +91,11 @@ body {
   src: url("ReotericBold.ttf");
 }
 
+#particle-container {
+  grid-area: 1 / 1 / 4 / 4;
+  z-index: -1;
+}
+
 .header {
   height: 100%;
   display: grid;
@@ -109,7 +114,7 @@ body {
   font-weight: bold;
   text-align: center;
   margin-top: 0%;
-  margin-bottom: 4em;
+  margin-bottom: 0em;
 }
 
 #section-title {
@@ -273,6 +278,10 @@ body {
   border-collapse: collapse;
 }
 
+.schedule-table tbody {
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
 th {
   font-size: 1.3rem;
   padding-bottom: 0.6em;
@@ -281,6 +290,7 @@ th {
 
 .schedule-table td {
   font-style: italic;
+  font-weight: bold;
   font-size: 1rem;
   border: 1px solid #293147;
   padding: 0.6em 0.7em;
@@ -293,13 +303,6 @@ th {
 .schedule-table tbody tr:nth-last-of-type(even) {
   background-color: rgb(180, 164, 99);
 }
-
-/* #register-form {
-  width: 95%;
-  height: 500px;
-  margin: auto;
-  display: block;
-} */
 
 #register-button {
   padding: 1em 2em;
@@ -314,6 +317,7 @@ th {
   /* font-family: "Courier New", Courier, monospace; */
   font-weight: bold;
   background-color: rgb(0, 140, 255);
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .contact-container {
@@ -433,10 +437,77 @@ th {
     display: flex;
   }
 
+  .schedule-table td {
+    font-size: 2.8vw;
+  }
+
   .logo-container img {
     justify-content: center;
     align-items: center;
   }
+
+  .head1 {
+    animation: typew 1s steps(5);
+    overflow: hidden;
+    white-space: nowrap;
+    /* border-right: 1px solid black; */
+  }
+
+  .head2 {
+    animation: typei 1.6s steps(3);
+    overflow: hidden;
+    white-space: nowrap;
+    /* border-right: 1px solid black; */
+  }
+
+  .head3 {
+    animation: typet 2.6s steps(4);
+    overflow: hidden;
+    white-space: nowrap;
+    /* border-right: 1px solid black; */
+  }
+
+  @keyframes typew {
+    0% {
+      width: 1.5ch;
+    }
+    50% {
+      width: 1.5ch;
+    }
+    100% {
+      width: 5.5ch;
+    }
+  }
+
+  @keyframes typei {
+    0% {
+      width: 0.55ch;
+    }
+    75% {
+      width: 0.55ch;
+    }
+    100% {
+      width: 1.7ch;
+    }
+  }
+
+  @keyframes typet {
+    0% {
+      width: 0.9ch;
+    }
+    71% {
+      width: 0.9ch;
+    }
+    100% {
+      width: 4ch;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .schedule-table td {
+  font-size: 1.2rem;
+}
 }
 
 @media screen and (min-width: 800px) {
