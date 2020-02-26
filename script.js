@@ -72,12 +72,12 @@ setInterval(() => {
     document.getElementById("closed-text").style.display = "block";
     document.getElementById("countdown").style.display = "none";
   } else {
-    var day = Math.floor(diff/(1000*60*60*24));
-    diff -= (day * 24*60*60*1000);
+    var day = Math.floor(diff / (1000 * 60 * 60 * 24));
+    diff -= day * 24 * 60 * 60 * 1000;
     var h = Math.floor(diff / (1000 * 60 * 60));
-    diff -= (h * 60 * 60 * 1000);
+    diff -= h * 60 * 60 * 1000;
     var m = Math.floor(diff / (1000 * 60));
-    diff -= (m * 60 * 1000);
+    diff -= m * 60 * 1000;
     var s = Math.floor(diff / 1000);
     hours.innerHTML = h;
     minutes.innerHTML = m;
