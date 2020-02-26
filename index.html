@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
-    <title>WiT</title>
+    <title>WiT 2020</title>            
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
@@ -28,35 +28,31 @@
     </marquee> -->
 
     <header class="header">
+        <div id="particle-container"></div>
         <section id="main-title-container">
             <div id="main-title-div">
-                <h1 id="main-title">Women</h1>
-                <h1 id="main-title">in</h1>
-                <h1 id="main-title">Tech</h1>
+                <h1 id="main-title" class="head1">Women</h1>
+                <h1 id="main-title" class="head2">in</h1>
+                <h1 id="main-title" class="head3">Tech</h1>
             </div>
-            <h2 id="home-date">8th March, 2019</h2>
+            <h2 id="home-date">8th March, 2020</h2>
+            <p>AN IEEE PESU EC CAMPUS, WIE CHAPTER EVENT</p>
+            <p id="closed-text" style="display: none; font-size: 1.4rem" class="timer">Registrations Closed</p>
+            <p id ="countdown" class="timer">Registrations Close in<br> <span id="days"></span>D <span id="hours"></span>H <span id="minutes"></span>M <span id="seconds"></span>S </p>
             <nav class="navbar">
                 <ul class="nav-links">
-                    <li><a href="#about-container">About</a></li>
-                    <!--
-                    -->
-                    <li><a href="#speakers-container">Speakers</a></li>
-                    <!--
-                    -->
-                    <li><a href="#schedule-container">Schedule</a></li>
-                    <!--
-                   -->
-                    <li><a href="#register-container">Register</a></li>
-                    <!--
-                    -->
-                    <li class="last-nav-item"><a href="#contact-container">Contact Us</a></li>
+                    <li><a href="#about-container">About</a></li><!--
+                    --><li><a href="#speakers-container">Speakers</a></li><!--
+                    --><li><a href="#schedule-container">Schedule</a></li><!--
+                   --><li><a href="#register-container">Register</a></li><!--
+                    --><li class="last-nav-item"><a href="#contact-container">Contact Us</a></li>
                 </ul>
             </nav>
             <a href="#about-container" id="read-more"><img src="down_arrow.svg" height="40px"></a>
         </section>
-        <!-- <img src="pes_logo_white.png" id="pes-logo">
-        <img src="mainlogo.png" id="ieee-logo"> -->
     </header>
+
+    <div class="overlay">
 
     <section class="section" id="about-container">
         <div data-aos="fade-right">
@@ -73,37 +69,46 @@
                 It aims to discuss how women can have a larger and
                 crucial role in creating success stories in business and
                 technology.</p>
+
+            <p class="content-body" style="font-weight: bold;">Registration Fee:</p>
+            <ul>
+                <li>IEEE Members: &#8377 170</li>
+                <li>Non-IEEE Members: &#8377 200</li>
+            </ul>
         </div>
     </section>
 
     <section class="section" id="speakers-container">
         <h1 id="section-title" data-aos="fade-right">Speakers</h1>
         <div class="speakers-container">
-            <div class="speaker" data-aos="zoom-in-up">
+            <div class="speaker card" id="speaker-1" data-aos="zoom-in-up">
+                <img class="speaker-pic" src="rekha.jpeg">
+                <h3 class="speaker-h">Rekha Kodali</h3>
+                <h5 class="speaker-h">Author, Practice Head (Principal Architect Technology Office) - Wipro</h5>
+            </div>
+            <div class="speaker card" id="speaker-2" data-aos="zoom-in-up">
+                <img class="speaker-pic" src="tina.jpeg">
+                <h3 class="speaker-h">Tina Vas</h3>
+                <h5 class="speaker-h">Senior Vice President Global HR at Hinduja Global Solutions</h5>
+            </div>
+            <div class="speaker card" id="speaker-3" data-aos="zoom-in-up">
                 <img class="speaker-pic" src="sample.jpg">
                 <h3 class="speaker-h">Speaker Name Here</h3>
                 <h5 class="speaker-h">Speaker Position</h5>
             </div>
-            <div class="speaker" data-aos="zoom-in-up">
+            <!-- </div> -->
+            <!-- <div class="speakers-container2"> -->
+            <!-- <div class="speaker card" data-aos="zoom-in-up">
                 <img class="speaker-pic" src="sample.jpg">
                 <h3 class="speaker-h">Speaker Name Here</h3>
                 <h5 class="speaker-h">Speaker Position</h5>
-            </div>
-            <div class="speaker" data-aos="zoom-in-up">
+            </div> -->
+            <!-- <div class="speaker card" data-aos="zoom-in-up">
                 <img class="speaker-pic" src="sample.jpg">
                 <h3 class="speaker-h">Speaker Name Here</h3>
                 <h5 class="speaker-h">Speaker Position</h5>
-            </div>
-            <div class="speaker" data-aos="zoom-in-up">
-                <img class="speaker-pic" src="sample.jpg">
-                <h3 class="speaker-h">Speaker Name Here</h3>
-                <h5 class="speaker-h">Speaker Position</h5>
-            </div>
-            <div class="speaker" data-aos="zoom-in-up">
-                <img class="speaker-pic" src="sample.jpg">
-                <h3 class="speaker-h">Speaker Name Here</h3>
-                <h5 class="speaker-h">Speaker Position</h5>
-            </div>
+            </div> -->
+            <!-- </div> -->
             <!-- <div class="speaker" data-aos="zoom-in-up">
                 <img class="speaker-pic" src="sample.jpg">
                 <h3 class="speaker-h">Speaker Name Here</h3>
@@ -123,82 +128,92 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>04:00 pm</td>
+                    <td>09:00 am</td>
                     <td>Registration Starts</td>
                 </tr>
                 <tr>
-                    <td>04:45 pm</td>
-                    <td>Inaugration Function</td>
+                    <td>10:00 am</td>
+                    <td>Inaugration</td>
                 </tr>
                 <tr>
-                    <td>05:30 pm</td>
-                    <td>Make-a-Thon Begins</td>
+                    <td>10:30 am</td>
+                    <td>Event Phase - 1</td>
                 </tr>
                 <tr>
-                    <td>08:00 pm</td>
-                    <td>Dinner & Recreational Activities</td>
-                </tr>
-                <tr>
-                    <td>11:30pm</td>
-                    <td>1st Round Judging Begins</td>
-                </tr>
-                <tr>
-                    <td>01:00 am</td>
-                    <td>Mid-night Snacks</td>
-                </tr>
-                <tr>
-                    <td>07:30 am</td>
-                    <td>Breakfast</td>
-                </tr>
-                <tr>
-                    <td>09:30 am</td>
-                    <td>2nd Round Judging</td>
-                </tr>
-                <tr>
-                    <td>12:30 pm</td>
+                    <td>12:15 pm</td>
                     <td>Lunch</td>
                 </tr>
                 <tr>
-                    <td>03:00 pm</td>
-                    <td>Final Round Judging</td>
+                    <td>01:00 pm</td>
+                    <td>Event Phase - 2</td>
                 </tr>
                 <tr>
-                    <td>04:00 pm</td>
-                    <td>High Tea</td>
+                    <td>02:45 pm</td>
+                    <td>Panel Discussion</td>
                 </tr>
                 <tr>
-                    <td>04:30 pm</td>
-                    <td>Valedictory Function</td>
+                    <td>03:15 pm</td>
+                    <td>Vote of Thanks and Dispersal</td>
                 </tr>
             </tbody>
         </table>
     </section>
 
-    <section class="section" id="register-container" data-aos="fade-right">
-        <h1 id="section-title">Register</h1>
-        <iframe id="register-form"
+    <section class="section" id="register-container">
+        <h1 id="section-title" data-aos="fade-right">Register</h1>
+        <!-- <iframe id="register-form"
             src="https://docs.google.com/forms/d/e/1FAIpQLSe8Yqj9nGlwX-DTSKNef2Jw5Fj_pbcM2nVRyjU_a5iqwE9G0g/viewform?embedded=true"
-            frameborder="0">Loading…</iframe>
+            frameborder="0">Loading…</iframe> -->
+        <a id="register-button" href="https://bit.ly/2T2B8cF" target="_blank" data-aos="fade-right">Register Here</a>
     </section>
 
-    <section class="section" id="contact-container" data-aos="fade-right">
-        <h1 id="section-title">Contact Us</h1>
-        <div class="contact-container">
-            <iframe
-            id="small-map"
+    
+
+    <section class="section" id="contact-container">
+        <h1 id="section-title" data-aos="fade-right">Contact Us</h1>
+        <div class="contact-container" data-aos="fade-right">
+            <iframe id="small-map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.7184702544446!2d77.662519415386!3d12.861451490928145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6cbccb22bec1%3A0x4bad30b7a7fd5e76!2sPES%20University%20Electronic%20City%20Campus!5e0!3m2!1sen!2sin!4v1582157301025!5m2!1sen!2sin"
                 width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            <iframe
-            id="big-map"
+            <iframe id="big-map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.7184702544446!2d77.662519415386!3d12.861451490928145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6cbccb22bec1%3A0x4bad30b7a7fd5e76!2sPES%20University%20Electronic%20City%20Campus!5e0!3m2!1sen!2sin!4v1582157301025!5m2!1sen!2sin"
                 width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             <div class="contact-details">
-                <p>Anjali Deshpande : +91-1234567890</p>
-                <p>Anjali Deshpande : +91-1234567890</p>
-                <p>Anjali Deshpande : +91-1234567890</p>
+                <table class="contact-table">
+                    <tbody>
+                        <tr>
+                            <td>Anjali Deshpande : </td>
+                            <td>+91-8884236626</td>
+                        </tr>
+                        <tr>
+                            <td>Nikita Raikar : </td>
+                            <td>+91-9663460745</td>
+                        </tr>
+                        <tr>
+                            <td>Siddesh Jain : </td>
+                            <td>+91-9611298059</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
+
+    <section class="section" id="logo-container">
+        <div class="big-logo-container">
+            <div class="logo-container">
+                <img src="pesu.png" id="pesu-logo">
+            </div>
+            <div class="logo-container">
+                <img src="ieeepesit.png" id="ieee-logo">
+            </div>
+            <div class="logo-container">
+                <img src="wie.png" id="wie-logo">
+            </div>
+        </div>
+    </section>
+    </div>
+    <!-- <div class="bottom-bar"></div> -->
 
     <!-- <div class="speakers">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis perferendis dicta facere, assumenda sequi
@@ -211,7 +226,7 @@
         labore eum quia sit perferendis sunt quasi dolore corporis quis temporibus ipsa et vero perspiciatis.
     </div> -->
 
-
+    <!-- 
     <div class="container-3">
         <table class="table">
             <tr>
@@ -236,7 +251,7 @@
                 <td>Developed by IEEE-Tech team</td>
             </tr>
         </table>
-    </div>
+    </div> -->
 
     <a href="#" id="button"></a>
 
@@ -253,10 +268,11 @@
             }
         });
         AOS.init({
-            offset: 200,
+            offset: 150,
             duration: 1000
         });
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
