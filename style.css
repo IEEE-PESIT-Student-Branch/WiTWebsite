@@ -305,7 +305,7 @@ th {
   background-color: #FE8C45;
 }
 
-#register-button {
+.register-button {
   padding: 1em 2em;
   text-decoration: none;
   margin-top: 2.3em;
@@ -352,7 +352,7 @@ th {
 }
 
 .section:nth-of-type(even) {
-  background-color: #ce5b39;
+  background-color: rgb(211, 73, 35);
 }
 
 .big-logo-container {
@@ -542,6 +542,10 @@ th {
 @media screen and (min-width: 910px) {
   .navbar {
     display: block;
+  }
+
+  #top-register-button {
+    display: none;
   }
 
   #big-map {
