@@ -410,6 +410,13 @@ th {
   #speaker-3 {
     grid-area: 2 / 2 / 3 / 4;
   }
+
+  #speaker-4 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  #speaker-5 {
+    grid-area: 2 / 3 / 3 / 2;
+  }
 }
 
 @media screen and (min-width: 570px) {
