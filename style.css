@@ -131,8 +131,8 @@ body {
 }
 
 .section:nth-of-type(odd) {
-  background-color: beige;
-  color: #293147;
+  background-color: #293147;
+  color: beige;
 }
 
 .section:nth-of-type(even) {
@@ -164,7 +164,8 @@ body {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(41, 49, 71, 0.25);
+  /* background-color: rgba(0, 0, 0, 0.15); */
 }
 
 .logo-container img {
@@ -198,7 +199,7 @@ body {
 
 #button {
   display: inline-block;
-  background-color: rgb(0, 140, 255);
+  background-color: #293147;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -235,7 +236,7 @@ body {
   margin-right: auto;
   margin-top: 2.3em;
   max-width: 1200px;
-  color: #293147;
+  color: beige;
   font-size: 1.1rem;
 }
 
@@ -297,14 +298,14 @@ th {
 }
 
 .schedule-table tbody tr:nth-last-of-type(odd) {
-  background-color: rgb(221, 221, 175);
+  background-color: #FFE1AF;
 }
 
 .schedule-table tbody tr:nth-last-of-type(even) {
-  background-color: rgb(180, 164, 99);
+  background-color: #FE8C45;
 }
 
-#register-button {
+.register-button {
   padding: 1em 2em;
   text-decoration: none;
   margin-top: 2.3em;
@@ -316,7 +317,7 @@ th {
   color: white;
   /* font-family: "Courier New", Courier, monospace; */
   font-weight: bold;
-  background-color: rgb(0, 140, 255);
+  background-color: #293147;
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -351,7 +352,7 @@ th {
 }
 
 .section:nth-of-type(even) {
-  background-color: #ce5b39;
+  background-color: rgb(211, 73, 35);
 }
 
 .big-logo-container {
@@ -541,6 +542,10 @@ th {
 @media screen and (min-width: 910px) {
   .navbar {
     display: block;
+  }
+
+  #top-register-button {
+    display: none;
   }
 
   #big-map {
