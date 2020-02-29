@@ -240,8 +240,11 @@ body {
   font-size: 1.1rem;
 }
 
-.content-body + ul {
+.content-header + ul {
   margin-top: 1em;
+  width: 84%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content-header {
