@@ -235,7 +235,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   /* margin-top: 2.3em; */
-  max-width: 1200px;
   color: beige;
   font-size: 1.1rem;
 }
@@ -634,19 +633,27 @@ th {
   }
 
   .speakers-container {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(6,1fr);
   }
 
   #speaker-1 {
-    grid-area: 1 / 1 / 2 / 2;
+    grid-area: 1 / 1 / 2 / 3;
   }
 
   #speaker-2 {
-    grid-area: 1 / 2 / 2 / 3;
+    grid-area: 1 / 3 / 2 / 5;
   }
 
   #speaker-3 {
-    grid-area: 1 / 3 / 2 / 4;
+    grid-area: 1 / 5 / 2 / 7;
+  }
+
+  #speaker-4 {
+    grid-area: 2 / 2 / 3 / 4;
+  }
+
+  #speaker-5 {
+    grid-area: 2 / 4 / 3 / 6;
   }
 }
 
@@ -670,9 +677,9 @@ th {
     font-size: 1.8rem;
   }
 
-  .speakers-container {
+  /* .speakers-container {
     grid-template-columns: 1fr 1fr 1fr;
-  }
+  } */
 }
 
 @media screen and (min-width: 1200px) {
