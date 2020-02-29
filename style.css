@@ -691,7 +691,7 @@ th {
   min-width: 100%;
   min-height:100%;
   max-height: 100%;
-  background-color: rgba(0, 0, 0, 0.671);
+  background-color: #293147;
   position: absolute;
   color: white;
   top: 0;
@@ -703,6 +703,7 @@ th {
 }
 
 .dtext{
+  font-weight: bold;
   padding: 2em;
   line-height: 1.5em;
 }
